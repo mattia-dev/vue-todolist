@@ -2,7 +2,7 @@ new Vue(
     {
         el: '#app',
         data: {
-            list: [
+            toDoList: [
                 'walk the dog',
                 'go to the grocery store',
                 'change the light bulb',

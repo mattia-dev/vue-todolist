@@ -15,7 +15,10 @@
         <input id="input-field" type="text">
 
         <ul>
-            <li></li>
+            <li v-for="task in toDoList">
+                <span>{{task}}</span>
+                <i class="fas fa-times"></i>
+            </li>
         </ul>
     </div>
 
