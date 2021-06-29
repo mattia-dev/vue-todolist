@@ -1,3 +1,7 @@
-ul {
+.tasks-list {
     list-style: none;
+}
+
+.tasks-list i {
+    cursor: pointer;
 }

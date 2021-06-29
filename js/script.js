@@ -25,6 +25,9 @@ new Vue(
                     this.inputText = '';   
                 }
                 this.focusElement();
+            },
+            deleteToDo(index) {
+                this.toDoList.splice(index, 1);
             }
         }
     }

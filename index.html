@@ -23,10 +23,10 @@
                 </div>
             </div>
             
-            <ul>
-                <li v-for="task in toDoList">
+            <ul class="tasks-list">
+                <li v-for="(task, index) in toDoList">
                     <span>{{task}}</span>
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times" @click="deleteToDo(index)"></i>
                 </li>
             </ul>
         </div>
