@@ -2,6 +2,7 @@ new Vue(
     {
         el: '#app',
         data: {
+            inputText: '',
             toDoList: [
                 'walk the dog',
                 'go to the grocery store',
@@ -16,7 +17,15 @@ new Vue(
         methods: {
             focusElement() {
                 document.getElementById("input-field").focus();
+
             },
+            pushToDo() {   
+                if (this.inputText !== '') {
+                    this.toDoList.push(this.inputText);
+                    this.inputText = '';   
+                }
+                this.focusElement();
+            }
         }
     }
 ); 
